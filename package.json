@@ -1,0 +1,56 @@
+{
+  "name": "nd-element",
+  "description": "stream in dom elements or html strings to add and update them as a nested multidimensional array",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nrw/nd-element.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js",
+    "build": "coffee -c -o . .",
+    "watch": "coffee -w -c -o . ."
+  },
+  "dependencies": {
+    "domify": "1.2.x",
+    "through2": "0.4.x"
+  },
+  "devDependencies": {
+    "coffee-script": "1.7.x",
+    "concat-stream": "1.4.x",
+    "tape": "2.x.x"
+  },
+  "homepage": "https://github.com/nrw/nd-element",
+  "keywords": [
+    "ndarray",
+    "point",
+    "multidimensional",
+    "array",
+    "ui",
+    "dom",
+    "html",
+    "browser",
+    "client"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Nicholas Westlake"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/latest",
+      "firefox/latest",
+      "firefox/nightly",
+      "chrome/latest",
+      "chrome/canary",
+      "opera/latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  }
+}
